@@ -70,16 +70,11 @@ representation of the database model.
 The following table illustrates the division of the privilege in the
 database to give only the necessary privileges to each user.
 
-  ----------------------------------------------------------------------------------------------
-  ROLE         **USERS**       **THREADS**         **SESSIONS**           **POSTS**
-  ------------ --------------- ------------------- ---------------------- ----------------------
-  Guests       INSERT SELECT                                              
-
-  Db_user      INSERT-SELECT                       INSERT-SELECT-UPDATE   INSERT-SELECT-DELETE
-
-  admin        INSERT SELECT   INSERT DELETE       INSERT-SELECT-UPDATE   INSERT-SELECT-DELETE
-                               SELECT                                     
-  ----------------------------------------------------------------------------------------------
+ |     ROLE       |     USERS            |     THREADS                  |     SESSIONS                |                 POSTS       |
+|----------------|----------------------|------------------------------|-----------------------------|-----------------------------|
+|     Guests     |     INSERT SELECT    |                              |                             |                             |
+|     Db_user    |     INSERT-SELECT    |                              |     INSERT-SELECT-UPDATE    |     INSERT-SELECT-DELETE    |
+|     admin      |     INSERT SELECT    |     INSERT  DELETE SELECT    |     INSERT-SELECT-UPDATE    |     INSERT-SELECT-DELETE    |
 
 **5 System Functionality**
 
