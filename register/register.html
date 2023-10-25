@@ -1,0 +1,55 @@
+<html>
+	<script>
+		onload = function(){
+			let searchParams = new URLSearchParams(window.location.search)
+			var er=searchParams.getAll('error');
+			if(er==1){
+				var error = document.getElementById("error");
+				error.textContent = "Error occurs"
+            error.style.color = "red"
+			}
+		}
+
+	</script>
+	<head>
+		<meta http-equiv="Pragma" content="no-cache"/>
+		<meta http-equiv="Expires" content="-1"/>
+		<title>Register page</title>
+		<link rel="stylesheet" href="styles/default.css" type="text/css"/>
+	</head>
+	<body>
+		<h1>Register</h1>
+        
+		<a href="http://localhost/login.html">login page</a>.		
+
+		<form name="accessForm" action="http://localhost/cgi-bin/register.cgi" method="post">
+			<table>
+				<tr>
+					<td>Email:<br/></td>
+					<td><input type="Email" name="Email" required/></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="password" minlength="5" maxlength="256" value="" required/></td>
+				</tr>
+                <tr>
+					<td>Username:</td>
+					<td><input type="text" name="Username"  value="" required/></td>
+				</tr>
+				<tr>
+					<td>Register as admin:</td>
+					<td><input type="checkbox" name="admin"/></td>
+				</tr>
+				<tr>
+					<td><span id="error"></span></td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" name="proceed" value="submit" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
+

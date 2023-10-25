@@ -1,0 +1,6 @@
+From: "User Name" <username@gmail.com>
+To: "John Smith" <Angelo.affatati@gmail.com>
+Cc: "Mary Smith" <mary@example.com>
+Subject: This is a test
+
+a BCC recipient eli is not specified in the data, just in the RCPT list.

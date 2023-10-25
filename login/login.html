@@ -1,0 +1,58 @@
+
+<html>
+	<script>
+		onload = function(){
+			let searchParams = new URLSearchParams(window.location.search)
+			var er=searchParams.getAll('error');
+			if(er==1){
+				var error = document.getElementById("error");
+				error.textContent = "Error occurs"
+            error.style.color = "red"
+			}else if(er==2){
+				 error = document.getElementById("error");
+				error.textContent = "Session expired"
+            error.style.color = "red"
+			}
+		}
+
+
+		
+	</script>
+	<head>
+		<meta http-equiv="Pragma" content="no-cache"/>
+		<meta http-equiv="Expires" content="-1"/>
+		<title>Login page</title>
+		<link rel="stylesheet" href="./styles.css" type="text/css"/>
+	
+	</head>
+
+	<body>
+		<h1>Villino gestionale</h1>
+
+		
+		<form name="accessForm" action="http://localhost/cgi-bin/login.cgi" method="post">
+			
+			<table>
+			
+				<tr>
+					<td>Inserire nickname:<br/></td>
+					<td><input type="Email" name="email" required/></td>
+				</tr>
+				<tr>
+					<td> insert password:</td>
+					<td><input type="password" name="password" value="" required/></td>
+				</tr>
+				<tr>
+					<td><span id="error"></span></td>
+				</tr>
+			
+				<tr>
+					<td>
+						<input type="submit" name="proceed" value="Procedi" />
+					</td>
+				</tr>
+			
+			</table>
+		</form>
+	</body>
+</html>
