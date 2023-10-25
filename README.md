@@ -51,16 +51,14 @@ You\'ll find a detailed representation of the front-end pages that users
 encounter during the navigation below.
 
 ![Immagine che contiene diagramma Descrizione generata
-automaticamente](./sitemap.png){width="5.709027777777778in"
-height="4.006944444444445in"}
+automaticamente](./sitemap.png)
 
 *Figura 1 Page Hierarchy*
 
 **4.2 Db design**
 
 ![Immagine che contiene diagramma Descrizione generata
-automaticamente](./dbstruct.png){width="6.483333333333333in"
-height="2.9541666666666666in"}
+automaticamente](./dbstruct.png)
 
 The database design is developed to minimise redundancy. Constraint
 using the primary key and the foreign key relationship has been
