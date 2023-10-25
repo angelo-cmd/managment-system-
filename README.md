@@ -19,7 +19,7 @@ the web server and creates dynamic content for the client's web browser.
 
 |      Name     |      Requirement                                                                                                                                                                                     |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|      FR1      |      There are two kinds of user: ordinary users and the administrator.    Both must be able to register an account and set a password.                                                              |
+|      FR1      |      There are two kinds of users: ordinary users and the administrator.    Both must be able to register an account and set a password.                                                              |
 |     FR2       |     Both types of user can see a list of the threads available, view all   the posts in a thread of their choice, add a post of their own at the end of   a thread and delete any of their posts.    |
 |     FR3       |     The administrator can also create a new thread with their contribution   as the first post, delete posts of others, and delete whole threads. There is   only one administrator account.         |
 
