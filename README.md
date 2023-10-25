@@ -51,7 +51,7 @@ You\'ll find a detailed representation of the front-end pages that users
 encounter during the navigation below.
 
 ![Immagine che contiene diagramma Descrizione generata
-automaticamente](./image1.png){width="5.709027777777778in"
+automaticamente](./sitemap.png){width="5.709027777777778in"
 height="4.006944444444445in"}
 
 *Figura 1 Page Hierarchy*
@@ -59,7 +59,7 @@ height="4.006944444444445in"}
 **4.2 Db design**
 
 ![Immagine che contiene diagramma Descrizione generata
-automaticamente](./image2.png){width="6.483333333333333in"
+automaticamente](./dbstruct.png){width="6.483333333333333in"
 height="2.9541666666666666in"}
 
 The database design is developed to minimise redundancy. Constraint
